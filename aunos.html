@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos - Garra de Águia Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body contenteditable="true">
+    <header>
+        <div class="logo-container">
+            <div class="logo">👥</div>
+            <div>
+                <h1>Garra de Águia Lily Lau do Brasil</h1>
+                <h2>Cadastro e Gestão de Alunos</h2>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="mensagens.html">Mensagens</a></li>
+            <li><a href="professores.html">Professores</a></li>
+            <li><a href="avaliacoes.html">Avaliações</a></li>
+            <li><a href="curriculo.html">Currículo</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+            <li><a href="ead.html">EAD</a></li>
+        </ul>
+    </nav>
+    
+    <div style="max-width: 1200px; margin: 30px auto; padding: 0 20px;">
+        <h3 style="color: #1a365d; text-align: center; font-size: 28px; margin-bottom: 20px;">Lista de Alunos Matriculados (127)</h3>
+        
+        <div class="quick-actions">
+            <button class="action-btn">➕ Novo Aluno</button>
+            <button class="action-btn">📋 Importar Lista</button>
+            <button class="action-btn">📊 Estatísticas</button>
+        </div>
+        
+        <div style="background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-top: 20px;">
+            <div style="display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap;">
+                <input type="text" placeholder="🔍 Buscar aluno..." style="flex: 1; min-width: 200px; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                <select style="padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                    <option>Todas as Faixas</option>
+                    <option>Faixa Branca</option>
+                    <option>Faixa Amarela</option>
+                    <option>Faixa Verde</option>
+                    <option>Faixa Vermelha</option>
+                    <option>Faixa Azul</option>
+                    <option>Faixa Roxa</option>
+                    <option>Faixa Marrom</option>
+                    <option>Faixa Preta</option>
+                </select>
+                <select style="padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                    <option>Todos os Status</option>
+                    <option>Ativo</option>
+                    <option>Inativo</option>
+                    <option>Trancado</option>
+                </select>
+            </div>
+            
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome do Aluno</th>
+                        <th>Grau Atual</th>
+                        <th>Período</th>
+                        <th>Data Matrícula</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Ana P. da Silva</td>
+                        <td>Faixa Roxa</td>
+                        <td>5º Período</td>
+                        <td>15/03/2023</td>
+                        <td><span class="status-badge status-ativo">Ativo</span></td>
+                        <td>
+                            <button style="background: #2c5282; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-right: 5px;">Editar</button>
+                            <button style="background: #f59e0b; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">Ver</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Bruno R. de Souza</td>
+                        <td>Faixa Branca</td>
+                        <td>1º Período</td>
+                        <td>10/08/2024</td>
+                        <td><span class="status-badge status-ativo">Ativo</span></td>
+                        <td>
+                            <button style="background: #2c5282; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-right: 5px;">Editar</button>
+                            <button style="background: #f59e0b; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">Ver</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Carla M. dos Santos</td>
+                        <td>Faixa Preta 1º Duen</td>
+                        <td>8º Período</td>
+                        <td>20/01/2020</td>
+                        <td><span class="status-badge status-ativo">Ativo</span></td>
+                        <td>
+                            <button style="background: #2c5282; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-right: 5px;">Editar</button>
+                            <button style="background: #f59e0b; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">Ver</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Daniel C. Almeida</td>
+                        <td>Faixa Amarela</td>
+                        <td>1º Período</td>
+                        <td>05/06/2024</td>
+                        <td><span class="status-badge status-inativo">Trancado</span></td>
+                        <td>
+                            <button style="background: #2c5282; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-right: 5px;">Editar</button>
+                            <button style="background: #f59e0b; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">Ver</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td>Elisa V. Ribeiro</td>
+                        <td>Iniciante</td>
+                        <td>N/A</td>
+                        <td>22/09/2024</td>
+                        <td><span class="status-badge status-ativo">Ativo</span></td>
+                        <td>
+                            <button style="background: #2c5282; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer; margin-right: 5px;">Editar</button>
+                            <button style="background: #f59e0b; color: white; border: none; padding: 5px 10px; border-radius: 3px; cursor: pointer;">Ver</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 20px;">
+                <span style="color: #4a5568;">Mostrando 5 de 127 alunos</span>
+                <div>
+                    <button class="action-btn" style="margin-right: 10px;">← Anterior</button>
+                    <button class="action-btn">Próximo →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        © Garra de Águia Lily Lau do Brasil — Sistema Acadêmico de Educação Marcial
+    </footer>
+</body>
+</html>
