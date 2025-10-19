@@ -1,1 +1,186 @@
-# weberbook-kungfu
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Principal - Garra de Águia Lily Lau do Brasil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body contenteditable="true">
+    <header>
+        <div class="logo-container">
+            <div class="logo">🎓</div>
+            <div>
+                <h1>Garra de Águia Lily Lau do Brasil</h1>
+                <h2>Educação Marcial Acadêmica — Sistema de Avaliação</h2>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="mensagens.html">Mensagens</a></li>
+            <li><a href="alunos.html">Alunos</a></li>
+            <li><a href="professores.html">Professores</a></li>
+            <li><a href="avaliacoes.html">Avaliações</a></li>
+            <li><a href="curriculo.html">Currículo</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+            <li><a href="ead.html">EAD</a></li>
+        </ul>
+    </nav>
+    
+    <div class="academic-metrics">
+        <h3 style="text-align: center; margin-bottom: 20px; color: #fbbf24;">Métricas Acadêmicas</h3>
+        <div class="metrics-grid">
+            <div class="metric-item">
+                <div class="metric-value">127</div>
+                <div class="metric-label">Alunos Matriculados</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-value">89%</div>
+                <div class="metric-label">Taxa de Aprovação</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-value">12</div>
+                <div class="metric-label">Professores Certificados</div>
+            </div>
+            <div class="metric-item">
+                <div class="metric-value">72%</div>
+                <div class="metric-label">Média de Progresso EAD</div>
+            </div>
+        </div>
+    </div>
+
+    <section class="form-section">
+        <h3>Ficha de Cadastro Docente/Discente</h3>
+        <form>
+            <div class="form-group">
+                <label for="tipo_cadastro">Tipo de Cadastro</label>
+                <select id="tipo_cadastro" name="tipo_cadastro" required>
+                    <option value="">Selecione...</option>
+                    <option value="discente">Discente (Aluno)</option>
+                    <option value="docente">Docente (Professor/Instrutor)</option>
+                </select>
+            </div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="nome_completo">Nome Completo</label>
+                    <input type="text" id="nome_completo" name="nome_completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="data_nascimento">Data de Nascimento</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento">
+                </div>
+            </div>
+            <div class="form-grid">
+                 <div class="form-group">
+                    <label for="grau_academico">Grau Acadêmico Marcial</label>
+                    <input list="graus" id="grau_academico" name="grau_academico" placeholder="Selecione ou digite o Grau" required>
+                    <datalist id="graus">
+                        <option value="Iniciante"></option>
+                        <option value="Intermediário"></option>
+                        <option value="Auxiliar Instrutor"></option>
+                        <option value="1. Ensino Básico - Faixa Branca (1º Período)"></option>
+                        <option value="1. Ensino Básico - Faixa Amarela (1º Período)"></option>
+                        <option value="1. Ensino Básico - Faixa Verde (2º Período)"></option>
+                        <option value="2. Ensino Intermediário - Faixa Vermelha (3º Período)"></option>
+                        <option value="2. Ensino Intermediário - Faixa Azul (4º Período)"></option>
+                        <option value="3. Ensino Médio - Faixa Roxa (5º Período)"></option>
+                        <option value="3. Ensino Médio - Faixa Marrom (6º Período)"></option>
+                        <option value="4. Ensino de Graduação - Faixa Preta (7º Período)"></option>
+                        <option value="4. Ensino de Graduação - Faixa Preta 1º Duen (8º Período)"></option>
+                        <option value="5. Pós Graduação - Faixa Preta 2º Duen"></option>
+                        <option value="5. Pós Graduação - Faixa Preta 3º Duen"></option>
+                        <option value="5. Pós Graduação - Faixa Preta 4º Duen"></option>
+                        <option value="6. Mestre - Faixa Preta 5º Duen"></option>
+                        <option value="6. Mestre - Faixa Preta 6º Duen"></option>
+                        <option value="6. Mestre - Faixa Preta 7º Duen"></option>
+                        <option value="7. Doutor"></option>
+                        <option value="8. Pós Doutorado"></option>
+                    </datalist>
+                </div>
+                <div class="form-group">
+                    <label for="data_matricula">Data de Matrícula/Admissão</label>
+                    <input type="date" id="data_matricula" name="data_matricula" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="observacoes">Observações/Histórico</label>
+                <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+            </div>
+            <button type="submit" class="action-btn" style="width: 100%; margin-top: 10px;">Salvar/Enviar Cadastro</button>
+        </form>
+    </section>
+    
+    <div class="dashboard-grid">
+        <a href="mensagens.html" style="text-decoration: none;">
+            <div class="card">
+                <div class="card-icon">💬</div>
+                <div class="card-title">Mensagens</div>
+                <div class="card-badge">3 novas</div>
+            </div>
+        </a>
+        
+        <a href="alunos.html" style="text-decoration: none;">
+            <div class="card">
+                <div class="card-icon">👥</div>
+                <div class="card-title">Alunos</div>
+            </div>
+        </a>
+        
+        <a href="professores.html" style="text-decoration: none;">
+            <div class="card">
+                <div class="card-icon">👨‍🏫</div>
+                <div class="card-title">Professores</div>
+            </div>
+        </a>
+        
+        <a href="avaliacoes.html" style="text-decoration: none;">
+            <div class="card">
+                <div class="card-icon">📝</div>
+                <div class="card-title">Avaliações</div>
+            </div>
+        </a>
+        
+        <a href="ead.html" style="text-decoration: none;"> 
+            <div class="card" style="border-color: #f59e0b;">
+                <div class="card-icon" style="color: #f59e0b;">💻</div>
+                <div class="card-title">Parte Teórica - Curso EAD</div>
+                <div class="card-badge" style="background: #f59e0b;">Módulos Online</div>
+            </div>
+        </a>
+        
+        <div class="card">
+            <div class="card-icon">📅</div>
+            <div class="card-title">Calendário Acadêmico</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-icon">📚</div>
+            <div class="card-title">Recursos Didáticos</div>
+        </div>
+        
+        <div class="card">
+            <div class="card-icon">📄</div>
+            <div class="card-title">Matriz Curricular</div>
+        </div>
+        
+        <a href="relatorios.html" style="text-decoration: none;">
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <div class="card-title">Relatórios Acadêmicos</div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="quick-actions">
+        <button class="action-btn">➕ Novo Aluno</button>
+        <button class="action-btn">📝 Nova Avaliação</button>
+        <button class="action-btn">📤 Exportar Relatório</button>
+    </div>
+    
+    <footer>
+        © Garra de Águia Lily Lau do Brasil — Sistema Acadêmico de Educação Marcial
+    </footer>
+</body>
+</html>
